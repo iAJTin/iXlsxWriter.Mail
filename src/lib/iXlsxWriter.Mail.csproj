@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>iXlsxWriter.Mail</AssemblyName>
+    <PackageId>iXlsxWriter.Mail</PackageId>
+    <Version>1.0.0.0</Version>
+    <Authors>iTin</Authors>
+    <Company>iTin</Company>
+    <Product>iXlsxWriter.Mail</Product>
+    <Description>Contains xlsx writer extensions for send smtp mail's for fullframework</Description>
+    <Copyright>Copyright © 2022</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\iTin\iTin.Core\iTin.Core.IO\src\iTin.Core.IO.csproj" />
+    <ProjectReference Include="..\..\..\..\iTin\iTin.Mail\iTin.Mail.Smtp.Net\src\iTin.Mail.Smtp.Net.csproj" />
+    <ProjectReference Include="..\..\..\..\iTin\iTin.Mime\iTin.Mime\src\iTin.Mime.csproj" />
+    <ProjectReference Include="..\..\..\iXlsxWriter.Abstractions\src\iXlsxWriter.Abstractions.Writer.csproj" />
+  </ItemGroup>
+
+</Project>

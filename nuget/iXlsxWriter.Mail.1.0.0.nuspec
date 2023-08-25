@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>iXlsxWriter.Mail</id>
+    <version>1.0.0</version>
+    <title>iXlsxWriter.Mail</title>
+    <authors>iAJTin</authors>
+    <owners>iAJTin</owners>
+    <readme>.\README.md</readme>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/iAJTin/iXlsxWriter.Mail</projectUrl>
+    <icon>.\iXlsxWriter.Mail.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/iAJTin/iXlsxWriter.Mail/master/nuget/iXlsxWriter.Mail.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      iXlsxWriter.Mail, extends iXlsxWriter, contains extension methods to send by mail XlsxInput instances as well as OutputResult
+    </description>
+    <copyright>Copyright © 2022 iAJTin</copyright>
+    <tags>Xlsx Writer Excel iTin</tags>
+    <repository type="git" url="https://github.com/iAJTin/iXlsxWriter.Mail"/>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+        <dependency id="MailKit" version="4.1.0" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+        <dependency id="MailKit" version="4.1.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\README.md" target="." />
+    <file src="..\README.txt" target="." />
+    <file src=".\iXlsxWriter.Mail.png" target="." />
+    <file src="..\src\lib\bin\Debug\**" target="lib" exclude="**\*.deps.json;**\*.pdb;" />
+  </files>
+</package>
