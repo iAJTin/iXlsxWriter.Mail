@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\iTin\iTin.Core\iTin.Core.IO\src\iTin.Core.IO.csproj" />
+    <ProjectReference Include="..\..\..\..\iTin\iTin.Core\iTin.Core.IO\iTin.Core.IO\src\iTin.Core.IO.csproj" />
     <ProjectReference Include="..\..\..\..\iTin\iTin.Mail\iTin.Mail.Smtp.Net\src\iTin.Mail.Smtp.Net.csproj" />
     <ProjectReference Include="..\..\..\..\iTin\iTin.Mime\iTin.Mime\src\iTin.Mime.csproj" />
     <ProjectReference Include="..\..\..\iXlsxWriter.Abstractions\src\iXlsxWriter.Abstractions.Writer.csproj" />
